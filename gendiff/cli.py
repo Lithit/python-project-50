@@ -11,13 +11,9 @@ def parsing_cli():
     # Positional arguments:
     parser.add_argument('first_file')
     parser.add_argument('second_file')
-    
     # Optional arguments:
     parser.add_argument('-f', '--format', help='set format to output')
-    
     args = parser.parse_args()
-    
     if '-h' in args:
         parser.print_help()
-    
     return args
