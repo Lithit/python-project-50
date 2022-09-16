@@ -11,7 +11,9 @@ def parsing_cli():
     parser.add_argument('first_file')
     parser.add_argument('second_file')
     
-    args = parser.parse.args()
+    args = parser.parse_args()
     
     if '-h' in args:
         parser.print_help()
+    
+    return args
