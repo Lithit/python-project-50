@@ -5,7 +5,7 @@ import argparse
 
 def parsing_cli():
     parser = argparse.ArgumentParser(
-        descpription='Compares two configuration\
+        description='Compares two configuration\
         files and shows a difference.'
     )
     parser.add_argument('first_file')
