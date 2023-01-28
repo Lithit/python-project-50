@@ -12,3 +12,9 @@ package-install:
 
 lint:
 	poetry run flake8 gendiff
+
+run-test:
+	poetry run pytest --cov=gendiff tests/ --cov-report xml
+
+gendiff-flat-json:
+	poetry run gendiff tests/fixtures/file1.json tests/fixtures/file2.json
