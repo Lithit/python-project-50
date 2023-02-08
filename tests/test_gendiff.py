@@ -9,9 +9,15 @@ def get_path(file_name):
 
 @pytest.mark.parametrize(
     'file1, file2, expected',
-    [('file1.json',
+    [
+        ('file1.json',
       'file2.json',
-      'json_correct_result.txt')]
+      'correct_result.txt'),
+        
+        ('file1.yml',
+      'file2.yml',
+      'correct_result.txt')
+        ]
     )
 
 

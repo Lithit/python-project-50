@@ -1,4 +1,5 @@
 import json
+import yaml
 
 
 def generate_diff(file_path1, file_path2):
@@ -18,3 +19,5 @@ def generate_diff(file_path1, file_path2):
             diff[f" + {key}"] = value_2
     sort_diff = sorted(diff.items(), key=lambda x: x[0][2:])
     return str(json.dumps(dict(sort_diff), indent=1)).replace('"', '')
+
+

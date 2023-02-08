@@ -119,6 +119,14 @@ tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "xmlschema"]
 
 [[package]]
+name = "pyyaml"
+version = "6.0"
+description = "YAML parser and emitter for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -129,7 +137,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "75aa55179556f276d3bc95d7792762fedbee9153f338ac552d1c0b581a5d169b"
+content-hash = "3b993e155a0b71e9495250659306b245d265c98f5bf1335649a12c345148e39c"
 
 [metadata.files]
 attrs = []
@@ -143,4 +151,5 @@ pluggy = []
 pycodestyle = []
 pyflakes = []
 pytest = []
+pyyaml = []
 tomli = []
